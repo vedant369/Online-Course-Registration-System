@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* position: relative; */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  background: #40898c;
+  /* background-size: auto; */
+  background: url(test.jpg);
+
+}
+
+.dropdown {
+  width: auto;
+  background-color: #3c3939;
+  padding: 8px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  box-shadow: 0 5px 10px rgb(20, 20, 20);
+
+}
+
+.container {
+  width: 100%;
+  background-color: #3c3939;
+  padding: 80px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgb(20, 20, 20);
+}
+
+#stQ {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  width: auto;
+  background-color: blue;
+}
+
+#op1 {
+  padding: 12px;
+  flex-direction: row;
+  height: 15px;
+  width: auto;
+}
+
+.submit {
+  height: 35px;
+  width: 80px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  border: none;
+  align-items: center;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.course {
+  display: flex;
+  flex-direction: row;
+  height: 200%;
+  color: blue;
+}
+
+div .quiz {
+  margin-top: 10px;
+}

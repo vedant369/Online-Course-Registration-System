@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IH=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/test.css">
+        
+        <title>Test</title>
+    </head>
+    <body>
+	
+		
+<form>
+	<div class="container">
+		
+			
+			<h1>Q1 . What is the fullform of PHP?</h1>
+			<div id="op1">
+				<input type="radio" name="r1">Post Hyper Process</input>
+			</div>
+			<div class="space"></div>
+			<div id="op1">
+				<input type="radio" name="r1">Hyper Text Preprocessor</input>
+			</div>
+			<div class="space"></div>
+			<div id="op1">
+				<input type="radio" name="r1">Post Hyper Process</input>
+			</div>
+			<div class="space"></div>
+			<div id="op1">
+				<input type="radio" name="r1">Past Hyper Process</input>
+			</div>
+			<div class="space"></div>
+			<div id="op1">
+				<input class="submit" type="submit"></input>
+			</div>
+		
+	</div>
+<br>
+		<div class="container">
+			
+			<h1>Q2 . What is the fullform of PHP?</h1>
+			
+			<div id="op1">
+				<input type="radio" name="r1">Post Hyper Process</input>
+			</div>
+			<div class="space"></div>
+			<div id="op1">
+				<input type="radio" name="r1">Hyper Text Preprocessor</input>
+			</div>
+			<div class="space"></div>
+			<div id="op1">
+				<input type="radio" name="r1">Post Hyper Process</input>
+			</div>
+			<div class="space"></div>
+			<div id="op1">
+				<input type="radio" name="r1">Past Hyper Process</input>
+			</div>
+			<div class="space"></div>
+			<div id="op1">
+				<input class="submit" type="submit"></input>
+			</div>
+		</div>
+		<br>
+		<div class="container">
+		
+			<h1>Q3 . What is the fullform of PHP?</h1>
+			
+			<div id="op1">
+				<input type="radio" name="r1">Post Hyper Process</input>
+			</div>
+			<div class="space"></div>
+			<div id="op1">
+				<input type="radio" name="r1">Hyper Text Preprocessor</input>
+			</div>
+			<div class="space"></div>
+			<div id="op1">
+				<input type="radio" name="r1">Post Hyper Process</input>
+			</div>
+			<div class="space"></div>
+			<div id="op1">
+				<input type="radio" name="r1">Past Hyper Process</input>
+			</div>
+			<div class="space"></div>
+			<div id="op1">
+				<input class="submit" type="submit"></input>
+			</div>
+		
+		</div>
+		
+	</div>	
+</form>
+
+    </body>
+</html>

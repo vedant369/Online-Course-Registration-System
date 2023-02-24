@@ -1,0 +1,93 @@
+<?php
+	require "./db_connect.php";
+	require "./message_display.php";
+	require "./verify_logged_out.php";
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div class="header">
+    <table>
+        <tr>
+            <td>
+            <h1>Online <span>Course</span> Registration</h1>
+            <p>The Online Course Registration is Web-based registration software that 
+                 helps you to register courses online. It is ideal for schools,educational campus and online training program. 
+                <br>Our Motto is to provide pure and usable material.</p>
+
+                <button class="cn"><a href="reg.php">JOIN US</a></button>
+            </td>
+            <td>
+
+			<form  class="form" method="POST" action="#">
+		
+			<h2>Login </h2>
+
+			<div class="error-message" id="error-message">
+				<p id="error"></p>
+			</div>
+			
+			
+				<input class="l-user input" type="text" name="l_user" placeholder="Username" required />
+				<input class="l-pass" type="password" name="l_pass" placeholder="Password" required />
+			
+
+					
+			<input type="submit" class="btnn" value="Login" name="l_login"/>
+			
+			<div>
+			<p class="link">Don't have an account<br>
+                    <a href="reg.php">Now Register</a> here</a></p>
+			</div>
+			
+		</form>
+                   
+					
+            
+            </td>
+        </tr>
+    </table>
+
+
+</div>
+
+
+<div class="navbar">
+<div class="logo">
+				<img src="img/logo.jpg">
+			</div>
+  <label>ONLINE COURSE REGISTRATION</label>			
+  <a href="home.php" class="active">Home</a>
+  <a href="course.php">Course </a>
+  <a href="test.php">Test</a>
+  <a href="certificate.php">Certificate</a>
+  <a href="contact.php">Contact</a>
+
+</div>
+<?php
+		if(isset($_POST['l_login']))
+		{
+			$query = $con->prepare("SELECT admin_id FROM tbl_admin WHERE username = ? AND password = ?;");
+			$query->bind_param("ss", $_POST['l_user'], $_POST['l_pass']);
+			$query->execute();
+			if(mysqli_num_rows($query->get_result()) != 1)
+				echo error_without_field("Invalid username/password combination");
+			else
+			{
+				$_SESSION['type'] = "tbl_admin";
+				$_SESSION['admin_id'] = mysqli_fetch_array($result)[0];
+				$_SESSION['username'] = $_POST['l_user'];
+				header('Location: home.php');
+			}
+		}
+	?>
+
+</body>
+</html>

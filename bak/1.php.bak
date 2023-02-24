@@ -1,0 +1,31 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="12.css">
+    </head>
+    <body>
+		<script type="text/javascript">
+			window.print()
+		</script>
+        <div class="container">
+            <div class="logo">
+                An InfoInstructors
+            </div>
+
+            <div class="marquee">
+                Certificate of Online Course Test 
+            </div>
+
+            <div class="assignment">
+                This certificate is presented to
+            </div>
+
+            <div class="person">
+                vedant
+            </div>
+
+            <div class="reason">
+                For Your Exisiting Course.
+            </div>
+        </div>
+    </body>
+</html>

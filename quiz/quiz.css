@@ -1,0 +1,55 @@
+/* Style the quiz header */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+/* Style the quiz form */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+/* Style the quiz questions */
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Style the quiz answer options */
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+/* Style the quiz submit button */
+input[type="submit"] {
+    display: block;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
